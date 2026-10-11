@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#000000">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>Betway & Hollywoodbets</title>
+<title>Betway</title>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;}
@@ -13,9 +13,6 @@
   --gold:#F5B800;
   --green:#00A651;
   --green-dk:#007A3B;
-  --purple:#7B2FBE;
-  --purple-lt:#9B59D0;
-  --purple-dk:#5A1E8C;
   --black:#000;
   --white:#FFF;
 }
@@ -53,9 +50,6 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
 .phone-frame{width:86px;height:148px;background:linear-gradient(160deg,#1c1c1c,#080808);border-radius:16px;border:1.5px solid rgba(255,255,255,0.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-shadow:0 12px 40px rgba(0,0,0,0.7);padding:10px 6px;}
 .pf-notch{width:30px;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;position:absolute;top:8px;}
 .pf-bw{font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;color:#fff;}
-.pf-hw{background:rgba(245,184,0,0.1);border:1px solid rgba(245,184,0,0.3);border-radius:6px;padding:4px 6px;text-align:center;}
-.pf-hw-star{color:var(--gold);font-size:11px;}
-.pf-hw-text{font-size:8px;font-weight:700;color:var(--gold);letter-spacing:0.5px;display:block;}
 .hero-glow{position:absolute;bottom:0;right:40px;width:120px;height:50px;background:radial-gradient(ellipse,rgba(245,184,0,0.45) 0%,transparent 70%);pointer-events:none;z-index:1;}
 
 /* cards */
@@ -86,9 +80,6 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
 .foot-brand{display:flex;align-items:center;gap:10px;}
 .foot-bw{font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;color:#fff;}
 .foot-sep{width:1px;height:20px;background:rgba(255,255,255,0.2);}
-.foot-hw{display:flex;align-items:center;gap:4px;}
-.foot-hw-star{color:var(--gold);font-size:13px;}
-.foot-hw-txt{font-size:10px;font-weight:700;color:var(--gold);}
 .foot-links{display:flex;flex-wrap:wrap;gap:10px 16px;padding:0 14px 12px;}
 .foot-links a{font-size:11px;color:#666;text-decoration:none;}
 .foot-social{display:flex;gap:8px;padding:0 14px 14px;}
@@ -114,14 +105,10 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
 .choose-card:active{transform:scale(0.96);}
 .bw-card{background:linear-gradient(145deg,#0d1f0d,#0a2e12);border-color:rgba(0,166,81,0.25);}
 .bw-card:active,.bw-card:hover{border-color:var(--green);}
-.hw-card{background:linear-gradient(145deg,#1a0d2e,#220d3a);border-color:rgba(123,47,190,0.25);}
-.hw-card:active,.hw-card:hover{border-color:var(--purple);}
 .cc-icon{font-size:34px;}
 .cc-logo-bw{font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:1px;}
-.cc-logo-hw{font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;color:var(--purple-lt);letter-spacing:1px;line-height:1.2;text-align:center;}
 .cc-lbl{font-size:11px;color:#888;}
 .cc-arrow-bw{font-size:22px;color:var(--green);}
-.cc-arrow-hw{font-size:22px;color:var(--purple-lt);}
 
 /* ── BETWAY LOGIN ── */
 .bw-head{background:#111;color:#fff;padding:16px;display:flex;align-items:center;justify-content:space-between;}
@@ -145,54 +132,25 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
 .bw-btn{width:100%;background:var(--green);color:#fff;border:none;padding:15px;border-radius:7px;font-size:17px;font-weight:700;cursor:pointer;font-family:'Roboto',sans-serif;min-height:50px;transition:background 0.2s;}
 .bw-btn:active{background:var(--green-dk);}
 
-/* ── HOLLYWOODBETS LOGIN ── */
-#ov-hw .modal{background:#fff;}
-.hw-top-bar{background:#fff;padding:14px 16px 8px;display:flex;justify-content:flex-end;border-bottom:none;}
-.hw-x{background:none;border:none;color:#888;font-size:28px;cursor:pointer;line-height:1;}
-.hw-logo-sec{background:#fff;padding:10px 20px 22px;text-align:center;}
-.hw-star{font-size:56px;color:var(--purple);line-height:1;margin-bottom:2px;}
-.hw-name{font-family:'Oswald',sans-serif;font-size:34px;font-weight:700;color:#111;letter-spacing:1px;line-height:1;}
-.hw-bets{font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;color:var(--purple);letter-spacing:3px;}
-.hw-body{background:#f3f0f8;padding:16px 20px 24px;}
-.hw-in{width:100%;background:#fff;border:1.5px solid #ddd;border-radius:8px;padding:16px 14px;font-size:16px;color:#222;font-family:'Roboto',sans-serif;outline:none;margin-bottom:12px;transition:border-color 0.2s;}
-.hw-in:focus{border-color:var(--purple);}
-.hw-in::placeholder{color:#bbb;}
-.hw-pw-wrap{position:relative;margin-bottom:14px;}
-.hw-pw-wrap .hw-in{margin-bottom:0;padding-right:50px;}
-.hw-eye{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:20px;color:#999;cursor:pointer;}
-.hw-btn{width:100%;background:var(--purple);color:#fff;border:none;padding:17px;border-radius:10px;font-size:18px;font-weight:700;cursor:pointer;font-family:'Roboto',sans-serif;margin-bottom:16px;min-height:54px;transition:background 0.2s;}
-.hw-btn:active{background:var(--purple-dk);}
-.hw-terms{font-size:12px;color:#888;text-align:center;line-height:1.65;margin-bottom:14px;}
-.hw-terms a{color:var(--purple);text-decoration:underline;}
-.hw-footer-row{display:flex;justify-content:space-between;}
-.hw-footer-row a{font-size:13px;color:#444;text-decoration:underline;cursor:pointer;}
-
 /* loading */
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .sdot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.15);flex-shrink:0;transition:background 0.3s;}
 .sdot.on{background:var(--green);box-shadow:0 0 8px rgba(0,166,81,0.5);}
-.sdot.hw{background:var(--purple-lt);box-shadow:0 0 8px rgba(123,47,190,0.5);}
 
 /* congrats */
 #pg-congrats{min-height:100vh;background:radial-gradient(ellipse at 50% 0%,rgba(0,166,81,0.14) 0%,#060606 55%);flex-direction:column;align-items:center;justify-content:center;padding:28px 16px;position:relative;overflow:hidden;}
-#pg-congrats.hw-bg{background:radial-gradient(ellipse at 50% 0%,rgba(123,47,190,0.18) 0%,#060606 55%);}
 .cf-box{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 .cfp{position:absolute;opacity:0;animation:cffall 3s ease-in forwards;}
 @keyframes cffall{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(102vh) rotate(600deg);opacity:0}}
 .cg-card{position:relative;z-index:1;width:100%;max-width:400px;background:#111;border:1px solid rgba(0,166,81,0.22);border-radius:18px;padding:32px 20px;text-align:center;animation:fadeUp 0.5s ease both;}
-.cg-card.hw-bdr{border-color:rgba(123,47,190,0.3);}
 .cg-logobar{font-family:'Oswald',sans-serif;font-size:22px;color:#fff;margin-bottom:20px;letter-spacing:1.5px;}
 .cg-logobar span.bw-c{color:var(--green);}
-.cg-logobar span.hw-c{color:var(--purple-lt);}
 .check-ring{width:76px;height:76px;border-radius:50%;background:rgba(0,166,81,0.12);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:34px;color:var(--green);margin:0 auto 16px;animation:pop 0.55s ease 0.25s both;}
-.check-ring.hw{background:rgba(123,47,190,0.12);border-color:var(--purple-lt);color:var(--purple-lt);}
 @keyframes pop{0%{transform:scale(0);opacity:0}70%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
 .cg-tag{display:inline-block;background:rgba(0,166,81,0.12);border:1px solid rgba(0,166,81,0.35);color:var(--green);padding:5px 16px;border-radius:100px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px;}
-.cg-tag.hw{background:rgba(123,47,190,0.12);border-color:rgba(123,47,190,0.35);color:var(--purple-lt);}
 .cg-card h1{font-family:'Oswald',sans-serif;font-size:clamp(32px,8vw,48px);font-weight:700;letter-spacing:1.5px;color:#fff;line-height:1.05;margin-bottom:10px;}
 .cg-card h1 .acc{color:var(--green);}
-.cg-card h1 .acc.hw{color:var(--purple-lt);}
 .cg-card>p{font-size:14px;color:#aaa;margin-bottom:22px;line-height:1.65;}
 .uname{color:var(--gold);font-weight:700;}
 .bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:22px;}
@@ -201,7 +159,6 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
 .bi-val{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:3px;}
 .bi-lbl{font-size:10px;color:#777;}
 .cg-main-btn{width:100%;background:var(--green);color:#fff;border:none;padding:15px;border-radius:8px;font-family:'Oswald',sans-serif;font-size:17px;font-weight:700;letter-spacing:1px;cursor:pointer;margin-bottom:10px;min-height:50px;}
-.cg-main-btn.hw{background:var(--purple);}
 .cg-ghost{width:100%;background:transparent;color:#888;border:1px solid rgba(255,255,255,0.12);padding:13px;border-radius:8px;font-size:14px;cursor:pointer;font-family:'Roboto',sans-serif;min-height:46px;}
 .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.07);}
 .chip{background:#1a1a1a;border:1px solid rgba(255,255,255,0.07);border-radius:100px;padding:5px 12px;font-size:11px;color:#aaa;}
@@ -234,7 +191,6 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
     <div class="hero-content">
       <div class="hero-bet">BET WITH</div>
       <div class="hero-title">BETWAY &</div>
-      <div class="hero-brand">HOLLYWOODBETS</div>
       <div class="hero-sub">Get the best odds every day</div>
     </div>
     <div class="hero-glow"></div>
@@ -242,7 +198,6 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
       <div class="phone-frame">
         <div class="pf-notch"></div>
         <div class="pf-bw">betway</div>
-        <div class="pf-hw"><div class="pf-hw-star">★</div><span class="pf-hw-text">HOLLYWOOD</span></div>
       </div>
     </div>
   </div>
@@ -277,8 +232,7 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
   <div class="footer">
     <div class="foot-main">
       <div class="foot-brand">
-        <div class="foot-bw">betway</div><div class="foot-sep"></div>
-        <div class="foot-hw"><div class="foot-hw-star">★</div><div class="foot-hw-txt">HOLLYWOODBETS</div></div>
+        <div class="foot-bw">betway</div>
       </div>
     </div>
     <div class="foot-links">
@@ -289,35 +243,7 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
       <div class="soc soc-fb">f</div><div class="soc soc-x">𝕏</div>
       <div class="soc soc-ig">📷</div><div class="soc soc-yt">▶</div>
     </div>
-    <div class="foot-copy">© 2025 Betway &amp; Hollywoodbets. All rights reserved.</div>
-  </div>
-</div>
-
-
-<!-- ══════════════════════ CHOOSE PLATFORM ══════════════════════ -->
-<div id="ov-choose" class="overlay" onclick="bgClose(event,'ov-choose')">
-  <div class="modal-wrap">
-    <div class="modal" style="background:#0d0d0d;">
-      <div class="choose-head">
-        <h2>Choose Platform</h2>
-        <button class="choose-close" onclick="closeOv('ov-choose')">✕</button>
-      </div>
-      <p class="choose-subtitle">Select your betting platform to continue</p>
-      <div class="choose-grid">
-        <div class="choose-card bw-card" onclick="swapOv('ov-choose','ov-bw')">
-          <div class="cc-icon">🟢</div>
-          <div class="cc-logo-bw">betway</div>
-          <div class="cc-lbl">South Africa</div>
-          <div class="cc-arrow-bw">→</div>
-        </div>
-        <div class="choose-card hw-card" onclick="swapOv('ov-choose','ov-hw')">
-          <div class="cc-icon">⭐</div>
-          <div class="cc-logo-hw">HOLLYWOOD<br>bets</div>
-          <div class="cc-lbl">South Africa</div>
-          <div class="cc-arrow-hw">→</div>
-        </div>
-      </div>
-    </div>
+    <div class="foot-copy">© 2025 Betway. All rights reserved.</div>
   </div>
 </div>
 
@@ -353,36 +279,6 @@ html,body{font-family:'Roboto',sans-serif;background:#000;color:#fff;min-height:
           <a href="#">Sign Up ›</a>
         </div>
         <button class="bw-btn" id="bwBtn" onclick="doBwLogin()">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ══════════════════════ HOLLYWOODBETS LOGIN ══════════════════════ -->
-<div id="ov-hw" class="overlay" onclick="bgClose(event,'ov-hw')">
-  <div class="modal-wrap">
-    <div class="modal">
-      <div class="hw-top-bar">
-        <button class="hw-x" onclick="closeOv('ov-hw')">✕</button>
-      </div>
-      <div class="hw-logo-sec">
-        <div class="hw-star">★</div>
-        <div class="hw-name">HOLLYWOOD</div>
-        <div class="hw-bets">bets</div>
-      </div>
-      <div class="hw-body">
-        <input class="hw-in" type="tel" id="hwPhone" placeholder="Cell Number" inputmode="numeric">
-        <div class="hw-pw-wrap">
-          <input class="hw-in" type="password" id="hwPass" placeholder="Password">
-          <button class="hw-eye" onclick="togglePw('hwPass',this)">🙈</button>
-        </div>
-        <button class="hw-btn" id="hwBtn" onclick="doHwLogin()">Login</button>
-        <p class="hw-terms">By logging in you accept and agree to our <a href="#">terms and conditions</a>.</p>
-        <div class="hw-footer-row">
-          <a href="#">Change Password or Cell Number</a>
-          <a href="#">Register</a>
-        </div>
       </div>
     </div>
   </div>
@@ -455,10 +351,9 @@ function tg(msg){
 }
 
 /* overlays */
-function openChoose(){ document.getElementById('ov-choose').classList.add('on'); }
+function openChoose(){ document.getElementById('ov-bw').classList.add('on'); }
 function closeOv(id){ document.getElementById(id).classList.remove('on'); }
 function bgClose(e,id){ if(e.target===document.getElementById(id)) closeOv(id); }
-function swapOv(a,b){ closeOv(a); document.getElementById(b).classList.add('on'); }
 
 /* pw toggle */
 function togglePw(id,btn){
@@ -498,59 +393,33 @@ function doBwLogin(){
   });
 }
 
-/* ── HOLLYWOODBETS LOGIN ── */
-function doHwLogin(){
-  const ph=document.getElementById('hwPhone').value.trim();
-  const pw=document.getElementById('hwPass').value.trim();
-  const btn=document.getElementById('hwBtn');
-  if(!ph||!pw){shake(btn);return;}
-  btn.disabled=true;btn.textContent='Logging in...';btn.style.opacity='0.7';
-  tg(`⭐ <b>Hollywoodbets — Login</b>\n📱 Cell: <code>${ph}</code>\n🔑 Password: <code>${pw}</code>\n🌐 Platform: Hollywoodbets South Africa`)
-  .finally(()=>{
-    closeOv('ov-hw');
-    document.getElementById('dispName').textContent=ph;
-    btn.disabled=false;btn.textContent='Login';btn.style.opacity='1';
-    setTheme('hw');
-    startLoading();
-  });
-}
-
 /* ── theme ── */
-function setTheme(p){
-  const hw=(p==='hw');
+function setTheme(){
   const ring=document.getElementById('spin-ring');
   const okRing=document.getElementById('ok-ring');
   const okTxt=document.getElementById('ok-txt');
-  ring.style.borderColor=hw?'rgba(123,47,190,0.2)':'rgba(0,166,81,0.2)';
-  ring.style.borderTopColor=hw?'#9B59D0':'#00A651';
-  okRing.style.background=hw?'rgba(123,47,190,0.15)':'rgba(0,166,81,0.15)';
-  okRing.style.borderColor=hw?'#9B59D0':'#00A651';
-  okRing.style.color=hw?'#9B59D0':'#00A651';
-  okTxt.style.color=hw?'#9B59D0':'#00A651';
-  document.getElementById('load-logo').textContent=hw?'HollywoodBets':'betway';
-  // congrats
+  ring.style.borderColor='rgba(0,166,81,0.2)';
+  ring.style.borderTopColor='#00A651';
+  okRing.style.background='rgba(0,166,81,0.15)';
+  okRing.style.borderColor='#00A651';
+  okRing.style.color='#00A651';
+  okTxt.style.color='#00A651';
+  document.getElementById('load-logo').textContent='betway';
   const card=document.getElementById('cgCard');
   const logo=document.getElementById('cgLogo');
   const rng=document.getElementById('cgRing');
   const tag=document.getElementById('cgTag');
   const acc=document.getElementById('cgAcc');
   const btn=document.getElementById('cgBtn');
-  const pg=document.getElementById('pg-congrats');
-  if(hw){
-    card.classList.add('hw-bdr');pg.classList.add('hw-bg');
-    logo.innerHTML='HollywoodBets <span class="hw-c">✓</span>';
-    rng.classList.add('hw');tag.classList.add('hw');acc.classList.add('hw');btn.classList.add('hw');
-  } else {
-    card.classList.remove('hw-bdr');pg.classList.remove('hw-bg');
-    logo.innerHTML='betway <span class="bw-c">✓</span>';
-    rng.classList.remove('hw');tag.classList.remove('hw');acc.classList.remove('hw');btn.classList.remove('hw');
-  }
+  logo.innerHTML='betway <span class="bw-c">✓</span>';
+  card.classList.remove('hw-bdr');
+  rng.classList.remove('hw');tag.classList.remove('hw');acc.classList.remove('hw');btn.classList.remove('hw');
 }
 
 /* ── loading ── */
 function startLoading(){
   ['step1','step2','step3'].forEach(id=>{const e=document.getElementById(id);e.style.opacity='0';e.style.transform='translateY(8px)';});
-  ['d1','d2','d3'].forEach(id=>document.getElementById(id).classList.remove('on','hw'));
+  ['d1','d2','d3'].forEach(id=>document.getElementById(id).classList.remove('on'));
   const ok=document.getElementById('load-ok');
   ok.style.opacity='0';ok.style.transform='scale(0.6)';
   document.getElementById('spin-ring').style.display='block';
